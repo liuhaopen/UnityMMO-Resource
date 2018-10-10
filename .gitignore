@@ -34,3 +34,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+Assets/Tools/
+
+Assets/(Temporary)
+Assets/(Temporary).meta
+Assets/Temp
+Assets/Temp.meta
