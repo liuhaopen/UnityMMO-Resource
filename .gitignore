@@ -35,6 +35,7 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+Assets/VacuumShaders
 Assets/Tools/
 
 Assets/(Temporary)
