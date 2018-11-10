@@ -13,7 +13,7 @@ public class SceneInfoExporter : Editor
 {
     const string SavePath = "Assets/AssetBundleRes/scene/";
 
-    [MenuItem("Terrain/Export Scene Info")]
+    [MenuItem("SceneEditor/Export Scene Info")]
     private static void Export()
     {
         SceneInfo export_info = new SceneInfo();

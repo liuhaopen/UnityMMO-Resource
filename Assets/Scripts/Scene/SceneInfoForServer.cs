@@ -1,34 +1,51 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using UnityEngine;
 
 [DataContract]
-public class SceneInfoForServer
+public class SceneInfoForServer : MonoBehaviour
 {
     [DataMember]
     public int scene_id;
 
     [DataMember]
     public string scene_name;
+
+    [HideInInspector]
     [DataMember]
     public List<DoorInfo> door_list;
+    [HideInInspector]
     [DataMember]
     public List<NPCInfo> npc_list;
+    [HideInInspector]
     [DataMember]
     public List<MonsterInfo> monster_list;
 
-    [DataMember]
-    public Dictionary<int, string> test_dic;
+    // [DataMember]
+    // public Dictionary<int, string> test_dic;
 }
 
 [DataContract]
-public class DoorInfo
+public class DoorInfo : MonoBehaviour
 {
     [DataMember]
     public int door_id;
 
     [DataMember]
-    public float pos_x;
+    public float pos_x
+    {
+        get
+        {
+            Debug.Log("door info x:"+transform.position.ToString());
+            return transform.position.x;
+        }
+        set
+        {
+            transform.position = new Vector3(value, transform.position.y, transform.position.z);
+        }
+    }
+    // private float pos_x;
 
     [DataMember]
     public float pos_y;
@@ -47,10 +64,12 @@ public class DoorInfo
 
     [DataMember]
     public float target_z;
+
+    
 }
 
 [DataContract]
-public class NPCInfo
+public class NPCInfo : MonoBehaviour
 {
     [DataMember]
     public int npc_id;
@@ -66,7 +85,7 @@ public class NPCInfo
 }
 
 [DataContract]
-public class MonsterInfo
+public class MonsterInfo : MonoBehaviour
 {
     [DataMember]
     public int monster_id;
