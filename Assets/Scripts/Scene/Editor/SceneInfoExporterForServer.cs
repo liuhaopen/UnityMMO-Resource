@@ -16,7 +16,10 @@ public class SceneInfoExporterForServer : Editor
     [MenuItem("SceneEditor/Export Scene Info For Server")]
     private static void Export()
     {
-        // Text();
+        // {
+        //     Text();
+        //     return;
+        // }
         SceneInfoForServer scene_info = Selection.activeTransform.GetComponent<SceneInfoForServer>();
         if (scene_info == null)
         {
@@ -32,6 +35,13 @@ public class SceneInfoExporterForServer : Editor
         export_info.npc_list = new List<NPCInfo>(npc_list);
         MonsterInfo[] monster_list = Selection.activeTransform.GetComponentsInChildren<MonsterInfo>();
         export_info.monster_list = new List<MonsterInfo>(monster_list);
+        string content = LuaUtility.ToLua(export_info);
+        content = "local config = " + content;
+        Debug.Log(content);
+        content += "\nreturn config";
+        string save_file_path = SavePath+"config_scene_"+export_info.scene_id+".lua";
+        File.WriteAllText(save_file_path, content);
+        Debug.Log("save to file path : "+save_file_path);
     }
     private static void Text()
     {
@@ -41,7 +51,7 @@ public class SceneInfoExporterForServer : Editor
         export_info.door_list = new List<DoorInfo>();
         DoorInfo door = new DoorInfo();
         door.door_id = 1;
-        door.pos_x = 1.1f;
+        // door.pos_x = 1.1f;
         door.pos_y = 2.2f;
         door.pos_z = 3.123456f;
         door.target_scene_id = 1002;
