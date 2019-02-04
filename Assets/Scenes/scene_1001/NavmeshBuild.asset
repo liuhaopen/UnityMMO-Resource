@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -545640581, guid: 58f9dcacf4cb7d14d9058b9a041e5ce8, type: 3}
+  m_Name: NavmeshBuild
+  m_EditorClassIdentifier: 
+  inputProcessors:
+  - {fileID: 11400000, guid: 4b94e9676c22c5d4aba87705a0ee1548, type: 2}
+  mBuildType: 0
+  mSceneQuery: {fileID: 0}
+  mTarget: {fileID: 11400000, guid: 2e4a63e4a42e48a418105d258e8ccce6, type: 2}
+  mConfig:
+    mRoot:
+      tileSize: 0
+      borderSize: 0
+      xzCellSize: 0.2
+      yCellSize: 0.1
+      walkableSlope: 45.5
+      walkableHeight: 19
+      walkableStep: 3
+      walkableRadius: 2
+      maxEdgeLength: 0
+      edgeMaxDeviation: 3
+      minRegionArea: 400
+      mergeRegionArea: 75
+      maxVertsPerPoly: 6
+      detailSampleDistance: 0.9
+      detailMaxDeviation: 2
+      contourOptions: 3
+      useMonotone: 0
+    mWalkableRadius: 0.4
+    mMaxEdgeLength: 0
+    mMinRegionArea: 16
+    mMergeRegionArea: 3
+    mWalkableHeight: 1.9
+    mWalkableStep: 0.3
+    mBuildFlags: 480
+    mResultOptions: 24
+  mBoundsMin: {x: 0, y: 0, z: 0}
+  mBoundsMax: {x: 0, y: 0, z: 0}
+  mBuildData:
+    unsafeItems: []
+    unsafeWidth: 0
+    unsafeDepth: 0
+    unsafeVersion: 0
+  mCleanInputGeometry: 1
+  mIsDirty: 0
