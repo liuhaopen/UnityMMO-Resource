@@ -7,6 +7,12 @@ using System;
 //实现思路可参考： http://www.cnblogs.com/crazylights/p/5732078.html
 public static class ExportNavmesh
 {
+    private const int MaxVertexPerPoly = 6;
+    private const ushort NullIndex = 0xffff;
+    
+    private const float xzCellSize = 0.30f;      //these two gotten from recast demo
+    private const float yCellSize = 0.20f;
+
     [UnityEditor.MenuItem("ExportNavmesh/ExportToJson")]
     static void ExportToJson()
     {
@@ -77,10 +83,77 @@ public static class ExportNavmesh
         return outnav;
     }
 
+    static void GetShardVertex(List<int> polysA, List<int> polysB, ref List<int> shardVertex)
+    {
+        for (int i=0; i<polysA.Count; i++)
+        {
+            for (int j=0; j<polysB.Count; j++)
+            {
+                if (polysA[i] == polysB[j] && polysA[i] != NullIndex)
+                {
+                    // Debug.Log("polysA[i]:"+polysA[i]+" b:"+polysB[j]+" i:"+i);
+                    shardVertex.Add(i);
+                }
+            }
+        }
+    }
+
+    static void MergePolyAndNeighbor(ref List<List<int>> polys, List<List<int>> neighbor)
+    {
+        for (int i=0; i < polys.Count; i++)
+        {
+            var poly = polys[i];
+            List<int> neighborVal = neighbor[i];
+            for (int j=0; j<MaxVertexPerPoly; j++)
+            {
+                poly.Add(neighborVal[j]);
+            }
+        }
+    }
+
+    static void GenNeighbor(List<List<int>> polys, ref List<List<int> > neighbor)
+    {
+        for (int i=0; i < polys.Count; i++)
+        {
+            // Debug.Log("polys.Count : "+polys.Count+ " I:"+i);
+            neighbor.Add(new List<int>());
+            for (int j=0; j<MaxVertexPerPoly; j++)
+                neighbor[i].Add(NullIndex);
+            for (int j=0; j < polys.Count; j++)
+            {
+                if (i==j)
+                    continue;
+                List<int> shardVertex = new List<int>();
+                GetShardVertex(polys[i], polys[j], ref shardVertex);
+                if (shardVertex.Count>2)
+                {
+                    EditorUtility.DisplayDialog("Error", "More than two vertexes shard between poly "+i+" and "+j, "ok");
+                    return;
+                }
+                // Debug.Log("shardVertex.Count : "+shardVertex.Count);
+                if (shardVertex.Count==2)
+                {
+                    Debug.Log("shard vertex : "+shardVertex[0]+" "+shardVertex[1]+" i:"+i+" j:"+j);
+                    if (shardVertex[0]==0)
+                    {
+                        if (shardVertex[1]==1)
+                            neighbor[i][0] = j;
+                        else
+                            neighbor[i][MaxVertexPerPoly-1] = j;
+                    }
+                    else
+                    {
+                        neighbor[i][shardVertex[0]] = j;
+                    }
+                }
+            }
+        }
+    }
+
     //TODO: 导出area字段
     static string GenNavMesh(string style)
     {
-        // return GenNavMeshOriginJson();
+        // return GenNavMeshOriginJson(); 
         UnityEngine.AI.NavMeshTriangulation navtri = UnityEngine.AI.NavMesh.CalculateTriangulation();
         //{
         //    var obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -117,7 +190,8 @@ public static class ExportNavmesh
         //关系是 index 公用的三角形表示他们共同组成多边形
         //多边形之间的连接用顶点位置识别
         List<int> polylast = new List<int>();
-        List<int[]> polys = new List<int[]>();
+        // List<int[]> polys = new List<int[]>();
+        List<List<int>> polys = new List<List<int>>();
         for (int i = 0; i < navtri.indices.Length / 3; i++)
         {
             int i0 = navtri.indices[i * 3 + 0];
@@ -139,7 +213,10 @@ public static class ExportNavmesh
             {
                 if (polylast.Count > 0)
                 {
-                    polys.Add(polylast.ToArray());
+                    var polyVert = new List<int>(polylast);
+                    for (int ii=polyVert.Count; ii<MaxVertexPerPoly; ii++)
+                        polyVert.Add(NullIndex);
+                    polys.Add(polyVert);
                 }
                 polylast.Clear();
                 polylast.Add(i0);
@@ -148,22 +225,36 @@ public static class ExportNavmesh
             }
         }
         if (polylast.Count > 0)
-            polys.Add(polylast.ToArray());
-
+        {
+            var polyVert = new List<int>(polylast);
+            for (int ii=polyVert.Count; ii<MaxVertexPerPoly; ii++)
+                polyVert.Add(NullIndex);
+            polys.Add(polyVert);
+        }
+        for (int i=0; i<polys.Count; i++)
+        {
+            for (int j=0; j<polys[i].Count; j++)
+            {
+                if (polys[i][j]!=NullIndex)
+                    polys[i][j] = indexmap[polys[i][j]];
+                // Debug.Log("i : "+i+" j:"+j+" value:"+polys[i][j]);
+            }
+        }
+        List<List<int> > neighbor = new List<List<int>>();
+        GenNeighbor(polys, ref neighbor);
+        MergePolyAndNeighbor(ref polys, neighbor);
+        
         float[] boundsMin = new float[3];
         float[] boundsMax = new float[3];
         GetBounds(repos, ref boundsMin, ref boundsMax);
-        Debug.Log("max bounds :" + boundsMax[1].ToString());
+        // Debug.Log("max bounds :" + boundsMax[1].ToString());
 
-        const float xzCellSize = 0.30f;      //these two gotten from recast demo
-	    const float yCellSize = 0.20f;
-        //Convert vertices from world space to grid space
-        ushort[] polyVerts = new ushort[repos.Count];
         for (int i = 0; i < repos.Count - 3; i++)
         {
-            polyVerts[i]     = (ushort)Math.Round(repos[i].x - boundsMin[0] / xzCellSize);
-            polyVerts[i + 1] = (ushort)Math.Round(repos[i].y - boundsMin[1] / yCellSize);
-            polyVerts[i + 2] = (ushort)Math.Round(repos[i].z - boundsMin[2] / xzCellSize);
+            ushort x = (ushort)Math.Round((repos[i].x - boundsMin[0])/ xzCellSize);
+            ushort y = (ushort)Math.Round((repos[i].y - boundsMin[1]) / yCellSize);
+            ushort z = (ushort)Math.Round((repos[i].z - boundsMin[2]) / xzCellSize);
+            repos[i] = new Vector3(x, y, z);
         }
 
         string outnav = "";
@@ -178,13 +269,21 @@ public static class ExportNavmesh
                 outnav += "[" + repos[i].x + "," + repos[i].y + "," + repos[i].z + "]";
             }
             outnav += "\n],\"p\":[\n";
-
+            // Debug.Log("outnav : "+outnav);
             for (int i = 0; i < polys.Count; i++)
             {
-                string outs = indexmap[polys[i][0]].ToString();
-                for (int j = 1; j < polys[i].Length; j++)
+                // string outs = indexmap[polys[i][0]].ToString();
+                string outs = polys[i][0].ToString();
+                for (int j = 1; j < MaxVertexPerPoly; j++)
                 {
-                    outs += "," + indexmap[polys[i][j]];
+                    var verIndex = polys[i][j];
+                    // if (verIndex!=NullIndex)
+                        // verIndex = indexmap[verIndex];
+                    outs += "," + verIndex;
+                }
+                for (int j = MaxVertexPerPoly; j < MaxVertexPerPoly*2; j++)
+                {
+                    outs += "," + polys[i][j];
                 }
 
                 if (i > 0)
@@ -206,7 +305,7 @@ public static class ExportNavmesh
             {
                 outnav += "f";
                 //逆向
-                for (int j = polys[i].Length - 1; j >= 0; j--)
+                for (int j = polys[i].Count - 1; j >= 0; j--)
                 {
                     outnav += " " + (indexmap[polys[i][j]] + 1);
                 }
