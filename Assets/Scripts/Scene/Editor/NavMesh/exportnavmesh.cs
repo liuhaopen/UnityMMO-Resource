@@ -231,6 +231,7 @@ public static class ExportNavmesh
                 polyVert.Add(NullIndex);
             polys.Add(polyVert);
         }
+        
         for (int i=0; i<polys.Count; i++)
         {
             for (int j=0; j<polys[i].Count; j++)
@@ -249,7 +250,7 @@ public static class ExportNavmesh
         GetBounds(repos, ref boundsMin, ref boundsMax);
         // Debug.Log("max bounds :" + boundsMax[1].ToString());
 
-        for (int i = 0; i < repos.Count - 3; i++)
+        for (int i = 0; i < repos.Count; i++)
         {
             ushort x = (ushort)Math.Round((repos[i].x - boundsMin[0])/ xzCellSize);
             ushort y = (ushort)Math.Round((repos[i].y - boundsMin[1]) / yCellSize);
@@ -260,7 +261,13 @@ public static class ExportNavmesh
         string outnav = "";
         if (style == "json")
         {
-            outnav = "{\"v\":[\n";
+            outnav = "{";
+            outnav += "\"nvp\":"+MaxVertexPerPoly+",\n";
+            outnav += "\"cs\":"+xzCellSize+",\n";
+            outnav += "\"ch\":"+yCellSize+",\n";
+            outnav += "\"bmin\":["+boundsMin[0]+", "+boundsMin[1]+", "+boundsMin[2]+"],\n";
+            outnav += "\"bmax\":["+boundsMax[0]+", "+boundsMax[1]+", "+boundsMax[2]+"],\n";
+            outnav += "\"v\":[\n";
             for (int i = 0; i < repos.Count; i++)
             {
                 if (i > 0)
@@ -268,7 +275,7 @@ public static class ExportNavmesh
 
                 outnav += "[" + repos[i].x + "," + repos[i].y + "," + repos[i].z + "]";
             }
-            outnav += "\n],\"p\":[\n";
+            outnav += "\n],\n\"p\":[\n";
             // Debug.Log("outnav : "+outnav);
             for (int i = 0; i < polys.Count; i++)
             {
