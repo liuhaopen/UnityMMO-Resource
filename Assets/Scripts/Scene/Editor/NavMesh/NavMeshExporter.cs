@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using System;
 
-//实现思路可参考： http://www.cnblogs.com/crazylights/p/5732078.html
-public static class ExportNavmesh
+public static class NavMeshExporter
 {
     private const int MaxVertexPerPoly = 6;
     private const ushort NullIndex = 0xffff;
@@ -13,7 +12,7 @@ public static class ExportNavmesh
     private const float xzCellSize = 0.30f;      //these two gotten from recast demo
     private const float yCellSize = 0.20f;
 
-    [UnityEditor.MenuItem("ExportNavmesh/ExportToJson")]
+    [UnityEditor.MenuItem("NavMeshExporter/ExportToJson")]
     static void ExportToJson()
     {
         string outstring = GenNavMesh("json");
@@ -22,7 +21,7 @@ public static class ExportNavmesh
         EditorUtility.DisplayDialog("Tip", "Export Navmesh As Json File Succeed!", "ok");
     }
 
-    [UnityEditor.MenuItem("ExportNavmesh/ExportToObj")]
+    [UnityEditor.MenuItem("NavMeshExporter/ExportToObj")]
     static void ExportToObj()
     {
         string outstring = GenNavMesh("obj");
@@ -186,7 +185,8 @@ public static class ExportNavmesh
                 indexmap[i] = ito;
             }
         }
-        
+        for(int i=0; i<navtri.areas.Length; i++)
+            Debug.Log("area : "+navtri.areas[i].ToString());
         //关系是 index 公用的三角形表示他们共同组成多边形
         //多边形之间的连接用顶点位置识别
         List<int> polylast = new List<int>();
