@@ -118,6 +118,18 @@ public static class NavMeshExporter
         }
     }
 
+    static int GetVaildVertexNum(List<int> poly)
+    {
+        int num = 0;
+        for (int i=0; i<poly.Count; i++)
+        {
+            if (poly[i]==NullIndex)
+                break;
+            num++;
+        }
+        return num;
+    }
+
     static void GenNeighbor(List<List<int>> polys, ref List<List<int> > neighbor)
     {
         for (int i=0; i < polys.Count; i++)
@@ -140,13 +152,13 @@ public static class NavMeshExporter
                 // Debug.Log("shardVertex.Count : "+shardVertex.Count);
                 if (shardVertex.Count==2)
                 {
-                    Debug.Log("shard vertex : "+shardVertex[0]+" "+shardVertex[1]+" i:"+i+" j:"+j);
+                    // Debug.Log("shard vertex : "+shardVertex[0]+" "+shardVertex[1]+" i:"+i+" j:"+j);
                     if (shardVertex[0]==0)
                     {
                         if (shardVertex[1]==1)
                             neighbor[i][0] = j;
                         else
-                            neighbor[i][MaxVertexPerPoly-1] = j;
+                            neighbor[i][GetVaildVertexNum(polys[i])-1] = j;
                     }
                     else
                     {
@@ -157,18 +169,29 @@ public static class NavMeshExporter
         }
     }
 
-    static private void AddPolyByVertex(List<int> vertexList, ref List<List<int>> polys)
+    static private void AddPolyByVertex(List<int> vertexList, ref List<List<int>> polys, bool isReverse)
     {
         if (MaxVertexPerPoly < vertexList.Count)
             MaxVertexPerPoly = vertexList.Count;
         var polyVert = new List<int>(vertexList);
-        polyVert.Reverse();
+        if (isReverse)
+            polyVert.Reverse();
         // if (isNeedFillNullIndex)
         // {
         //     for (int ii=polyVert.Count; ii<MaxVertexPerPoly; ii++)
         //         polyVert.Add(NullIndex);
         // }
         polys.Add(polyVert);
+    }
+    
+    static void ShowDebugMesh(List<Vector3> vertexes, List<List<int>> polys)
+    {
+        // var obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        // var mf = obj.GetComponent<MeshFilter>();
+        // Mesh m = new Mesh();
+        // m.vertices = navtri.vertices;
+        // m.triangles = navtri.indices;
+        // mf.mesh = m;
     }
 
     //TODO: 导出area字段
@@ -236,11 +259,7 @@ public static class NavMeshExporter
             {
                 if (polylast.Count > 0)
                 {
-                    // var polyVert = new List<int>(polylast);
-                    // for (int ii=polyVert.Count; ii<MaxVertexPerPoly; ii++)
-                    //     polyVert.Add(NullIndex);
-                    // polys.Add(polyVert);
-                    AddPolyByVertex(polylast, ref polys);
+                    AddPolyByVertex(polylast, ref polys, style == "json");
                 }
                 polylast.Clear();
                 polylast.Add(i0);
@@ -250,13 +269,7 @@ public static class NavMeshExporter
         }
         if (polylast.Count > 0)
         {
-            // var polyVert = new List<int>(polylast);
-            // for (int ii=polyVert.Count; ii<MaxVertexPerPoly; ii++)
-            //     polyVert.Add(NullIndex);
-            // polys.Add(polyVert);
-            // if (MaxVertexPerPoly<polylast.Count)
-                // MaxVertexPerPoly = polylast.Count;
-            AddPolyByVertex(polylast, ref polys);
+            AddPolyByVertex(polylast, ref polys, style == "json");
         }
 
         string outnav = "";
@@ -327,6 +340,7 @@ public static class NavMeshExporter
                 outnav += "[" + outs + "]";
             }
             outnav += "\n]}";
+            ShowDebugMesh(repos, polys);
         }
         else if (style == "obj")
         {
