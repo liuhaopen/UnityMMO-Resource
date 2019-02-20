@@ -31,6 +31,8 @@ public class SceneInfoExporterForServer : Editor
         export_info.scene_name = scene_info.scene_name;
         DoorInfo[] door_list = Selection.activeTransform.GetComponentsInChildren<DoorInfo>();
         export_info.door_list = new List<DoorInfo>(door_list);
+        BornInfo[] born_list = Selection.activeTransform.GetComponentsInChildren<BornInfo>();
+        export_info.born_list = new List<BornInfo>(born_list);
         NPCInfo[] npc_list = Selection.activeTransform.GetComponentsInChildren<NPCInfo>();
         export_info.npc_list = new List<NPCInfo>(npc_list);
         MonsterInfo[] monster_list = Selection.activeTransform.GetComponentsInChildren<MonsterInfo>();

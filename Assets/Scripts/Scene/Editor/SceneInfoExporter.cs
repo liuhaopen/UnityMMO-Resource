@@ -53,10 +53,11 @@ public class SceneInfoExporter : Editor
         // msObj.Position = 0;
         // StreamReader sr = new StreamReader(msObj, Encoding.UTF8);
         // string json = sr.ReadToEnd();
-        string json = JsonUtility.ToJson(export_info);
-        File.WriteAllText(SavePath+Selection.activeGameObject.name+"/scene_info.json", json);
         // sr.Close();
         // msObj.Close();
+        string json = JsonUtility.ToJson(export_info, true);
+        File.WriteAllText(SavePath+Selection.activeGameObject.name+"/scene_info.json", json);
+        
         Debug.Log("export : "+json);
     }
 
