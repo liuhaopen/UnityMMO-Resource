@@ -56,9 +56,9 @@ public class SceneInfoExporter : Editor
         // sr.Close();
         // msObj.Close();
         string json = JsonUtility.ToJson(export_info, true);
-        File.WriteAllText(SavePath+Selection.activeGameObject.name+"/scene_info.json", json);
-        
-        Debug.Log("export : "+json);
+        string savePath = SavePath+Selection.activeGameObject.name+"/scene_info.json";
+        File.WriteAllText(savePath, json);
+        Debug.Log("export succeed : "+savePath+" content : "+json);
     }
 
     private static void SaveLightInfo(SceneInfo export_info)
@@ -96,7 +96,8 @@ public class SceneInfoExporter : Editor
         {
             for (int i = 0; i < transform.childCount; i++)
             {
-                PickChild(transform.GetChild(i), sceneObjectList);
+                if (transform.GetChild(i).gameObject.activeSelf)
+                    PickChild(transform.GetChild(i), sceneObjectList);
             }
         }
     }
