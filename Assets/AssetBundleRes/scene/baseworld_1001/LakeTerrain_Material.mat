@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _V_T2M_Control:
-        m_Texture: {fileID: 2800000, guid: 51fdc5ace2012c24cbd8e6f761344b9f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4705df664f11f16469feb4b0312cb874, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _V_T2M_Splat1:

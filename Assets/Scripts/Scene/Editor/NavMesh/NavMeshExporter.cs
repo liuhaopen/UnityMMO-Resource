@@ -26,8 +26,8 @@ public static class NavMeshExporter
     static void ExportToNavBin()
     {
         ProgressBarName = "ExportToNavBin";
-        string outstring = GenNavMesh("json");
         string select_path = EditorUtility.SaveFilePanel("Export Navmesh As NavBin File", "", "navmesh", "bin");
+        string outstring = GenNavMesh("json");
         EditorUtility.DisplayProgressBar(ProgressBarName, "正在转化为tile cache", 0.85f);
         int resultCode = ConvertJsonToNavBinFile(outstring, select_path);
         EditorUtility.ClearProgressBar();

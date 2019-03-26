@@ -46,6 +46,13 @@ public class SceneInfoExporter : Editor
 
         SaveLightInfo(export_info);
 
+        BornInfo[] born_list = Selection.activeTransform.GetComponentsInChildren<BornInfo>();
+        export_info.BornList = new List<BornInfoData>();
+        foreach (var item in born_list)
+        {
+            export_info.BornList.Add(new BornInfoData(item.GetUnityPos(), item.born_id));
+        }
+        Debug.Log("born_list : "+born_list.Length+" "+export_info.BornList.Count);
         // DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(SceneInfo));
         // MemoryStream msObj = new MemoryStream();
         //将序列化之后的Json格式数据写入流中
