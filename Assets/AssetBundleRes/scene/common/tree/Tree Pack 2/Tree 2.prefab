@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 19347392}
   - component: {fileID: 3374382}
   - component: {fileID: 2397296}
+  - component: {fileID: 6484212558197499908}
   m_Layer: 0
   m_Name: Tree 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &428738
 Transform:
@@ -88,6 +89,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6484212558197499908
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3504713, y: 23.847996, z: 5.260204}
+  m_Center: {x: -0.010851026, y: 11.923998, z: 0.6777508}
 --- !u!21 &2165866
 Material:
   serializedVersion: 6
@@ -166,6 +180,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Cutoff: 0.3
     - _SquashAmount: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

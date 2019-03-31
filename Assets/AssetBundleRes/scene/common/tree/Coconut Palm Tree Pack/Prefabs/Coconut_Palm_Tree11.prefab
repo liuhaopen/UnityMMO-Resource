@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 431770}
   - component: {fileID: 3303736}
   - component: {fileID: 2399220}
-  - component: {fileID: 13637498}
   - component: {fileID: 19311894}
+  - component: {fileID: 3873194788405295183}
   m_Layer: 0
   m_Name: Coconut_Palm_Tree11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &431770
 Transform:
@@ -80,20 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &13637498
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171260}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.6
-  m_Height: 8
-  m_Direction: 1
-  m_Center: {x: 0.27, y: 3, z: 0}
 --- !u!193 &19311894
 Tree:
   m_ObjectHideFlags: 0
@@ -103,3 +89,16 @@ Tree:
   m_GameObject: {fileID: 171260}
   m_SpeedTreeWindAsset: {fileID: 0}
   m_TreeData: {fileID: 0}
+--- !u!65 &3873194788405295183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4059563, y: 22.558662, z: 1.1965513}
+  m_Center: {x: 1.2973156, y: 10.779331, z: -0.059253216}
