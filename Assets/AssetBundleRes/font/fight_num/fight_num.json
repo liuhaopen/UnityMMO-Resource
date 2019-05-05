@@ -1,0 +1,460 @@
+{"frames": [
+
+{
+	"filename": "addHp.png",
+	"frame": {"x":82,"y":89,"w":78,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":42},
+	"sourceSize": {"w":78,"h":42}
+},
+{
+	"filename": "baoji_mainrole.png",
+	"frame": {"x":2,"y":89,"w":78,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":42},
+	"sourceSize": {"w":78,"h":42}
+},
+{
+	"filename": "baoji_mainrole_0.png",
+	"frame": {"x":184,"y":216,"w":25,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+	"sourceSize": {"w":25,"h":33}
+},
+{
+	"filename": "baoji_mainrole_1.png",
+	"frame": {"x":36,"y":286,"w":15,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":15,"h":32},
+	"sourceSize": {"w":25,"h":32}
+},
+{
+	"filename": "baoji_mainrole_2.png",
+	"frame": {"x":54,"y":252,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "baoji_mainrole_3.png",
+	"frame": {"x":199,"y":348,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "baoji_mainrole_4.png",
+	"frame": {"x":28,"y":252,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "baoji_mainrole_5.png",
+	"frame": {"x":157,"y":216,"w":25,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+	"sourceSize": {"w":25,"h":33}
+},
+{
+	"filename": "baoji_mainrole_6.png",
+	"frame": {"x":174,"y":321,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "baoji_mainrole_7.png",
+	"frame": {"x":2,"y":252,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "baoji_mainrole_8.png",
+	"frame": {"x":180,"y":251,"w":24,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":33},
+	"sourceSize": {"w":24,"h":33}
+},
+{
+	"filename": "baoji_mainrole_9.png",
+	"frame": {"x":149,"y":321,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "baoji_other.png",
+	"frame": {"x":164,"y":88,"w":78,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":42},
+	"sourceSize": {"w":78,"h":42}
+},
+{
+	"filename": "baoji_other_0.png",
+	"frame": {"x":107,"y":207,"w":25,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+	"sourceSize": {"w":25,"h":33}
+},
+{
+	"filename": "baoji_other_1.png",
+	"frame": {"x":19,"y":286,"w":15,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":15,"h":32},
+	"sourceSize": {"w":25,"h":32}
+},
+{
+	"filename": "baoji_other_2.png",
+	"frame": {"x":106,"y":242,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "baoji_other_3.png",
+	"frame": {"x":225,"y":322,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "baoji_other_4.png",
+	"frame": {"x":80,"y":242,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "baoji_other_5.png",
+	"frame": {"x":80,"y":207,"w":25,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+	"sourceSize": {"w":25,"h":33}
+},
+{
+	"filename": "baoji_other_6.png",
+	"frame": {"x":200,"y":313,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "baoji_other_7.png",
+	"frame": {"x":54,"y":218,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "baoji_other_8.png",
+	"frame": {"x":154,"y":251,"w":24,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":33},
+	"sourceSize": {"w":24,"h":33}
+},
+{
+	"filename": "baoji_other_9.png",
+	"frame": {"x":175,"y":286,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "damage_mainrole_0.png",
+	"frame": {"x":225,"y":209,"w":25,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+	"sourceSize": {"w":25,"h":33}
+},
+{
+	"filename": "damage_mainrole_1.png",
+	"frame": {"x":2,"y":286,"w":15,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":15,"h":32},
+	"sourceSize": {"w":25,"h":32}
+},
+{
+	"filename": "damage_mainrole_2.png",
+	"frame": {"x":28,"y":218,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "damage_mainrole_3.png",
+	"frame": {"x":150,"y":286,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "damage_mainrole_4.png",
+	"frame": {"x":2,"y":218,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "damage_mainrole_5.png",
+	"frame": {"x":225,"y":174,"w":25,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+	"sourceSize": {"w":25,"h":33}
+},
+{
+	"filename": "damage_mainrole_6.png",
+	"frame": {"x":105,"y":276,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "damage_mainrole_7.png",
+	"frame": {"x":206,"y":279,"w":24,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+	"sourceSize": {"w":24,"h":32}
+},
+{
+	"filename": "damage_mainrole_8.png",
+	"frame": {"x":211,"y":244,"w":24,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":33},
+	"sourceSize": {"w":24,"h":33}
+},
+{
+	"filename": "damage_mainrole_9.png",
+	"frame": {"x":80,"y":276,"w":23,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+	"sourceSize": {"w":23,"h":33}
+},
+{
+	"filename": "exp.png",
+	"frame": {"x":80,"y":176,"w":55,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":29},
+	"sourceSize": {"w":55,"h":29}
+},
+{
+	"filename": "exp0.png",
+	"frame": {"x":232,"y":296,"w":18,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":24},
+	"sourceSize": {"w":18,"h":24}
+},
+{
+	"filename": "exp1.png",
+	"frame": {"x":242,"y":132,"w":12,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":23},
+	"sourceSize": {"w":12,"h":23}
+},
+{
+	"filename": "exp2.png",
+	"frame": {"x":134,"y":227,"w":18,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":24},
+	"sourceSize": {"w":18,"h":24}
+},
+{
+	"filename": "exp3.png",
+	"frame": {"x":224,"y":357,"w":17,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":24},
+	"sourceSize": {"w":17,"h":24}
+},
+{
+	"filename": "exp4.png",
+	"frame": {"x":137,"y":201,"w":18,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":24},
+	"sourceSize": {"w":18,"h":24}
+},
+{
+	"filename": "exp5.png",
+	"frame": {"x":137,"y":176,"w":19,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+	"sourceSize": {"w":19,"h":23}
+},
+{
+	"filename": "exp6.png",
+	"frame": {"x":130,"y":299,"w":17,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":24},
+	"sourceSize": {"w":17,"h":24}
+},
+{
+	"filename": "exp7.png",
+	"frame": {"x":132,"y":253,"w":18,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":23},
+	"sourceSize": {"w":18,"h":23}
+},
+{
+	"filename": "exp8.png",
+	"frame": {"x":237,"y":270,"w":17,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":24},
+	"sourceSize": {"w":17,"h":24}
+},
+{
+	"filename": "exp9.png",
+	"frame": {"x":237,"y":244,"w":17,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":24},
+	"sourceSize": {"w":17,"h":24}
+},
+{
+	"filename": "exp_+.png",
+	"frame": {"x":130,"y":278,"w":18,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":19},
+	"sourceSize": {"w":18,"h":19}
+},
+{
+	"filename": "huixin_mainrole.png",
+	"frame": {"x":2,"y":175,"w":76,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":41},
+	"sourceSize": {"w":76,"h":41}
+},
+{
+	"filename": "huixin_other.png",
+	"frame": {"x":82,"y":133,"w":76,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":41},
+	"sourceSize": {"w":76,"h":41}
+},
+{
+	"filename": "mianshang_mainrole.png",
+	"frame": {"x":84,"y":2,"w":80,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":42},
+	"sourceSize": {"w":80,"h":42}
+},
+{
+	"filename": "mianshang_other.png",
+	"frame": {"x":2,"y":2,"w":80,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":42},
+	"sourceSize": {"w":80,"h":42}
+},
+{
+	"filename": "relive.png",
+	"frame": {"x":160,"y":174,"w":63,"h":40},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":63,"h":40},
+	"sourceSize": {"w":67,"h":44}
+},
+{
+	"filename": "shanbi_mainrole.png",
+	"frame": {"x":2,"y":133,"w":78,"h":40},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":40},
+	"sourceSize": {"w":78,"h":40}
+},
+{
+	"filename": "shanbi_other.png",
+	"frame": {"x":162,"y":132,"w":78,"h":40},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":40},
+	"sourceSize": {"w":78,"h":40}
+},
+{
+	"filename": "wudi_mainrole.png",
+	"frame": {"x":83,"y":46,"w":79,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":79,"h":41},
+	"sourceSize": {"w":79,"h":41}
+},
+{
+	"filename": "wudi_other.png",
+	"frame": {"x":2,"y":46,"w":79,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":79,"h":41},
+	"sourceSize": {"w":79,"h":41}
+},
+{
+	"filename": "yunxuan_mainrole.png",
+	"frame": {"x":166,"y":45,"w":79,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":79,"h":41},
+	"sourceSize": {"w":79,"h":41}
+},
+{
+	"filename": "yunxuan_other.png",
+	"frame": {"x":166,"y":2,"w":79,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":79,"h":41},
+	"sourceSize": {"w":79,"h":41}
+}],
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "best_hit.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:81872d1f7ccc7444118a5a4eb77cbb0d$"
+}
+}

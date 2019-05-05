@@ -1,16 +1,16 @@
 {
     "LightmapMode": 1,
     "LightColorResPath": [
-        "Assets/Scenes/scene_1001/Lightmap-0_comp_light.exr",
-        "Assets/Scenes/scene_1001/Lightmap-1_comp_light.exr",
-        "Assets/Scenes/scene_1001/Lightmap-2_comp_light.exr",
-        "Assets/Scenes/scene_1001/Lightmap-3_comp_light.exr"
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-0_comp_light.exr",
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-1_comp_light.exr",
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-2_comp_light.exr",
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-3_comp_light.exr"
     ],
     "LightDirResPath": [
-        "Assets/Scenes/scene_1001/Lightmap-0_comp_dir.png",
-        "Assets/Scenes/scene_1001/Lightmap-1_comp_dir.png",
-        "Assets/Scenes/scene_1001/Lightmap-2_comp_dir.png",
-        "Assets/Scenes/scene_1001/Lightmap-3_comp_dir.png"
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-0_comp_dir.png",
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-1_comp_dir.png",
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-2_comp_dir.png",
+        "Assets/AssetBundleRes/scene/baseworld_1001/Lightmap-3_comp_dir.png"
     ],
     "Bounds": {
         "m_Center": {

@@ -435,8 +435,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29364519}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 330.9, y: 2.39, z: 165.7}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 330.90002, y: 2.3899994, z: 165.69995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1853543236}
@@ -454,7 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281173e8104ce71459cf442871b6d6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster_id: 1
+  monster_type_id: 2000
+  monster_num: 10
+  radius: 1000
 --- !u!1001 &32050855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3115,6 +3117,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 231076628}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &239238208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239238209}
+  - component: {fileID: 239238210}
+  m_Layer: 0
+  m_Name: boss_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &239238209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239238208}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 114, y: 2.41, z: 86}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1853543236}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239238210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239238208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281173e8104ce71459cf442871b6d6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster_type_id: 2005
+  monster_num: 1
+  radius: 1200
 --- !u!1001 &241666727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3488,12 +3536,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4975649804072840, guid: f0283050d04cb3d4e94f9cafd21acb0c,
     type: 3}
   m_PrefabInstance: {fileID: 286187911}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &292497736 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 469886, guid: ee2d107a34692a64e95ce85aed5e41f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 878805991}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &294440620
 PrefabInstance:
@@ -15577,36 +15619,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1170001460}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1171527247
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1171527248}
-  m_Layer: 0
-  m_Name: monster_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1171527248
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171527247}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 336.1845, y: 1.2848816, z: 286.3108}
-  m_LocalScale: {x: 0.70681167, y: 0.7068116, z: 0.7068116}
-  m_Children: []
-  m_Father: {fileID: 1853543236}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1180931357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15674,6 +15686,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1180931357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1185448498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1185448499}
+  - component: {fileID: 1185448500}
+  m_Layer: 0
+  m_Name: boss_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1185448499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185448498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 330.90002, y: 2.3899994, z: 165.69995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1853543236}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185448500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185448498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281173e8104ce71459cf442871b6d6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster_type_id: 2001
+  monster_num: 1
+  radius: 800
 --- !u!1001 &1187926517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16466,6 +16524,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be878d9ea17907f4a8068678a5ce7908, type: 3}
+--- !u!1 &1251065924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251065925}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1251065925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251065924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 848.427, y: 186.5301, z: 110.154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1252489674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18126,26 +18214,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a1bfe72fbc87d04e885296b53e91c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 292497736}
-  smoothCameraRotation: 12
+  target: {fileID: 0}
+  smoothCameraRotation: 1.2466354
   cullingLayer:
     serializedVersion: 2
-    m_Bits: 1
-  lockCamera: 0
+    m_Bits: 0
+  lockCamera: 128
   rightOffset: 0
-  defaultDistance: 8.34
-  height: 1.4
-  smoothFollow: 10
-  xMouseSensitivity: 3
-  yMouseSensitivity: 3
-  yMinLimit: -40
-  yMaxLimit: 80
+  defaultDistance: 1.2466202
+  height: 0
+  smoothFollow: 1.2466125
+  xMouseSensitivity: 0
+  yMouseSensitivity: 1.2466049
+  yMinLimit: 0
+  yMaxLimit: 1.2465973
   indexList: 0
-  indexLookPoint: 0
+  indexLookPoint: 1067421760
   offSetPlayerPivot: 0
   currentStateName: 
   currentTarget: {fileID: 0}
-  movementSpeed: {x: 0, y: 0}
+  movementSpeed: {x: 1.246582, y: 0}
 --- !u!4 &1365266119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4243724423293762, guid: c07f24e35f07ce74ba43afa35d48adf7,
@@ -21329,6 +21417,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7dbaa2be0fe3404fa01a46e02d1d823, type: 3}
+--- !u!1 &1574108127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574108128}
+  - component: {fileID: 1574108129}
+  m_Layer: 0
+  m_Name: boss_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1574108128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574108127}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 174, y: 1.5, z: 239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1853543236}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1574108129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574108127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281173e8104ce71459cf442871b6d6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster_type_id: 2003
+  monster_num: 1
+  radius: 1000
 --- !u!4 &1583942721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481256, guid: 956bd2acf7aae244dac8fc20cf57858d,
@@ -21427,7 +21561,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1853543236}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1590030804
 MonoBehaviour:
@@ -21441,7 +21575,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281173e8104ce71459cf442871b6d6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster_id: 1
+  monster_type_id: 2002
+  monster_num: 12
+  radius: 1200
 --- !u!1001 &1594645587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25170,9 +25306,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 29364520}
+  - {fileID: 1185448499}
   - {fileID: 1590030803}
+  - {fileID: 1574108128}
   - {fileID: 2003642375}
-  - {fileID: 1171527248}
+  - {fileID: 239238209}
   m_Father: {fileID: 99814395}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27926,7 +28064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1853543236}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2003642376
 MonoBehaviour:
@@ -27940,7 +28078,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281173e8104ce71459cf442871b6d6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster_id: 1
+  monster_type_id: 2004
+  monster_num: 7
+  radius: 1400
 --- !u!1001 &2010510142
 PrefabInstance:
   m_ObjectHideFlags: 0
