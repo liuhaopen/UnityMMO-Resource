@@ -7,8 +7,8 @@ namespace UnityMMO
 public enum SceneInfoKey
 {
     None=0,
-    EnterScene=1,//value is scene object type
-    LeaveScene=2,
+    EnterView=1,//value is scene object type
+    LeaveView=2,
     PosChange=3,
     TargetPos=4,
     JumpState=5,
@@ -22,5 +22,6 @@ public enum SceneObjectType
     Role=1,
     Monster=2,
     NPC=3,
+    DropItem=4,//µÙ¬‰ŒÔ
 }
 }

@@ -72,28 +72,3 @@ public class SceneStaticObject : ISceneObject
         m_LightmapScaleOffset = lightmapScaleOffset;
     }
 }
-
-// public class SceneRoleDetector : IDetector
-    // {
-    //     Entity entity;
-    //     EntityManager entityManager;
-    //     public Vector3 Position 
-    //     {
-    //         get 
-    //         {
-    //             Position pos = entityManager.GetComponentData<Position>(this.entity);
-    //             return pos.Value;
-    //         }
-    //     }
-
-    //     public SceneRoleDetector(Entity entity)
-    //     {
-    //         this.entity = entity;
-    //         entityManager = World.Active.GetExistingManager<EntityManager>();
-    //     }
-
-    //     public bool IsDetected(Bounds bounds)
-    //     {
-    //         throw new System.NotImplementedException();
-    //     }
-    // }
