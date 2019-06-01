@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: c46cd98021e2e3540aabea68eda8afb8
+timeCreated: 1534384528
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Head
+    100004: Bip001 L Calf
+    100006: Bip001 L Thigh
+    100008: Bip001 Neck
+    100010: Bip001 Pelvis
+    100012: Bip001 R Calf
+    100014: Bip001 R Thigh
+    100016: Bip001 Spine
+    100018: Bip001 Xtra01
+    100020: Bip001 Xtra0102
+    100022: Bip001 Xtra01Opp
+    100024: Bip001 Xtra01Opp02
+    100026: Bip001 Xtra02
+    100028: Bip001 Xtra03
+    100030: Bip001 Xtra04
+    100032: Bip001 Xtra0402
+    100034: Bip001 Xtra0403
+    100036: Bip001 Xtra0404
+    100038: Bip001 Xtra0405
+    100040: Bip001 Xtra0406
+    100042: Bip001 Xtra05
+    100044: Bip001 Xtra0502
+    100046: Bip001 Xtra0503
+    100048: Bip001 Xtra0504
+    100050: Bip001 Xtra0505
+    100052: Bip001 Xtra06
+    100054: Bip001 Xtra07
+    100056: Bip001 Xtra07Opp
+    100058: Bip001 Xtra08
+    100060: Bip001 Xtra08Opp
+    100062: //RootNode
+    100064: root
+    400000: Bip001
+    400002: Bip001 Head
+    400004: Bip001 L Calf
+    400006: Bip001 L Thigh
+    400008: Bip001 Neck
+    400010: Bip001 Pelvis
+    400012: Bip001 R Calf
+    400014: Bip001 R Thigh
+    400016: Bip001 Spine
+    400018: Bip001 Xtra01
+    400020: Bip001 Xtra0102
+    400022: Bip001 Xtra01Opp
+    400024: Bip001 Xtra01Opp02
+    400026: Bip001 Xtra02
+    400028: Bip001 Xtra03
+    400030: Bip001 Xtra04
+    400032: Bip001 Xtra0402
+    400034: Bip001 Xtra0403
+    400036: Bip001 Xtra0404
+    400038: Bip001 Xtra0405
+    400040: Bip001 Xtra0406
+    400042: Bip001 Xtra05
+    400044: Bip001 Xtra0502
+    400046: Bip001 Xtra0503
+    400048: Bip001 Xtra0504
+    400050: Bip001 Xtra0505
+    400052: Bip001 Xtra06
+    400054: Bip001 Xtra07
+    400056: Bip001 Xtra07Opp
+    400058: Bip001 Xtra08
+    400060: Bip001 Xtra08Opp
+    400062: //RootNode
+    400064: root
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
