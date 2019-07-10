@@ -1,0 +1,1 @@
+Copy the Assets/AssetBundleRes folder to the Assets folder of the Project[UnityMMO](https://github.com/liuhaopen/UnityMMO "UnityMMO")

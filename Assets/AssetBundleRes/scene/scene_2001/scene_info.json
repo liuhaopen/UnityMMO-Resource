@@ -1,0 +1,214 @@
+{
+    "LightmapMode": 1,
+    "LightColorResPath": [],
+    "LightDirResPath": [],
+    "Bounds": {
+        "m_Center": {
+            "x": 17.400009155273439,
+            "y": 13.049999237060547,
+            "z": 21.20001220703125
+        },
+        "m_Extent": {
+            "x": 92.40000915527344,
+            "y": 37.05000305175781,
+            "z": 133.20001220703126
+        }
+    },
+    "ObjectInfoList": [
+        {
+            "m_Bounds": {
+                "m_Center": {
+                    "x": -17.0,
+                    "y": 13.700000762939454,
+                    "z": 154.3000030517578
+                },
+                "m_Extent": {
+                    "x": 50.0,
+                    "y": 35.0,
+                    "z": 0.10000000149011612
+                }
+            },
+            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad.prefab",
+            "m_Position": {
+                "x": -17.0,
+                "y": 13.699999809265137,
+                "z": 154.3000030517578
+            },
+            "m_Rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "m_Size": {
+                "x": 100.0,
+                "y": 70.0,
+                "z": 1.0
+            },
+            "m_LightmapIndex": -1,
+            "m_LightmapScaleOffset": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            }
+        },
+        {
+            "m_Bounds": {
+                "m_Center": {
+                    "x": -17.0,
+                    "y": 13.700000762939454,
+                    "z": -111.9000015258789
+                },
+                "m_Extent": {
+                    "x": 50.0,
+                    "y": 35.0,
+                    "z": 0.10000000149011612
+                }
+            },
+            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (1).prefab",
+            "m_Position": {
+                "x": -17.0,
+                "y": 13.699999809265137,
+                "z": -111.9000015258789
+            },
+            "m_Rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "m_Size": {
+                "x": 100.0,
+                "y": 70.0,
+                "z": 1.0
+            },
+            "m_LightmapIndex": -1,
+            "m_LightmapScaleOffset": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            }
+        },
+        {
+            "m_Bounds": {
+                "m_Center": {
+                    "x": 109.80000305175781,
+                    "y": 13.700000762939454,
+                    "z": -51.400001525878909
+                },
+                "m_Extent": {
+                    "x": 0.00000762939453125,
+                    "y": 35.0,
+                    "z": 50.00000762939453
+                }
+            },
+            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (2).prefab",
+            "m_Position": {
+                "x": 109.80000305175781,
+                "y": 13.699999809265137,
+                "z": -51.400001525878909
+            },
+            "m_Rotation": {
+                "x": 0.0,
+                "y": 270.0,
+                "z": 0.0
+            },
+            "m_Size": {
+                "x": 100.0,
+                "y": 70.0,
+                "z": 1.0
+            },
+            "m_LightmapIndex": -1,
+            "m_LightmapScaleOffset": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            }
+        },
+        {
+            "m_Bounds": {
+                "m_Center": {
+                    "x": -25.0,
+                    "y": -24.0,
+                    "z": 70.80000305175781
+                },
+                "m_Extent": {
+                    "x": 50.0,
+                    "y": 0.000003814697265625,
+                    "z": 35.0
+                }
+            },
+            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (2).prefab",
+            "m_Position": {
+                "x": -25.0,
+                "y": -24.0,
+                "z": 70.80000305175781
+            },
+            "m_Rotation": {
+                "x": 270.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "m_Size": {
+                "x": 100.0,
+                "y": 70.0,
+                "z": 1.0
+            },
+            "m_LightmapIndex": -1,
+            "m_LightmapScaleOffset": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            }
+        },
+        {
+            "m_Bounds": {
+                "m_Center": {
+                    "x": -25.0,
+                    "y": 50.099998474121097,
+                    "z": 70.80000305175781
+                },
+                "m_Extent": {
+                    "x": 50.0,
+                    "y": 0.000003814697265625,
+                    "z": 35.0
+                }
+            },
+            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (2).prefab",
+            "m_Position": {
+                "x": -25.0,
+                "y": 50.099998474121097,
+                "z": 70.80000305175781
+            },
+            "m_Rotation": {
+                "x": 90.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "m_Size": {
+                "x": 100.0,
+                "y": 70.0,
+                "z": 1.0
+            },
+            "m_LightmapIndex": -1,
+            "m_LightmapScaleOffset": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 0.0,
+                "w": 0.0
+            }
+        }
+    ],
+    "BornList": [
+        {
+            "pos": {
+                "x": 87.0,
+                "y": -14.0,
+                "z": -83.0
+            },
+            "bornId": 1
+        }
+    ]
+}
