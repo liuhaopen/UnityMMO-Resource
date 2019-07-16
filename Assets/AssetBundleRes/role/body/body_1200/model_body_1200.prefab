@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4951122486070374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 4221442311537420}
   - component: {fileID: 95514303990062416}
   - component: {fileID: 2314179816558783417}
-  m_Layer: 0
-  m_Name: model_clothe_1200
+  m_Layer: 8
+  m_Name: model_body_1200
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4982847145267284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4623728924442166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4028567269178174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255426310168604}
   - component: {fileID: 137162248779177420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: model_clothe_1200
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4437872636126042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4006514607407474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4579542118510072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: topknot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4526037352424538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4054424607651048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: topknot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4655958573319088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4120360817593010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bip001 Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4271923833189576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone_wq03_x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4810603448971290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4800881283681798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4068022443714986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone_wq02_x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4212510848097578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 4429364666701472}
   - component: {fileID: 95372032431354438}
   - component: {fileID: 6312273244190390567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: model_body_1101
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4446758833131252}
   - component: {fileID: 137954123680914860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: model_clothe_1107
   m_TagString: Untagged
   m_Icon: {fileID: 0}

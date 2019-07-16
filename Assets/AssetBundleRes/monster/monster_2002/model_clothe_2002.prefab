@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4002377980159750}
   - component: {fileID: 137766292410944492}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: model_clothe_10050103
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 4655009928819742}
   - component: {fileID: 95653339552532320}
   - component: {fileID: 6055671329275270233}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: model_clothe_2002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4078441572702880}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}

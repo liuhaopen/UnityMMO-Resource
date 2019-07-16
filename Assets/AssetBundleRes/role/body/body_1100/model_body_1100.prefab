@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4539430722246394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4072541957660404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4633974519908154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4070717859592510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: topknot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4356455963664412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone_wq02_x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4962214601200732}
   - component: {fileID: 137139370529026098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: model_clothe_1100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,8 +241,8 @@ GameObject:
   - component: {fileID: 4961124822063664}
   - component: {fileID: 95736565266252270}
   - component: {fileID: 1305620638387633913}
-  m_Layer: 0
-  m_Name: model_clothe_1100
+  m_Layer: 8
+  m_Name: model_body_1100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,7 +311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4121670758281010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4623637942910988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bone_wq03_x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4500917513748662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
