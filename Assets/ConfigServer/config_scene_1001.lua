@@ -23,10 +23,16 @@ door_list = {{
 },
 },
 born_list = {{
-		pos_x = 75294,
-		pos_y = 16364,
-		pos_z = 116428,
+		pos_x = 73670,
+		pos_y = 16261,
+		pos_z = 114380,
 		born_id = 1,
+},
+{
+		pos_x = 65528,
+		pos_y = 16478,
+		pos_z = 117550,
+		born_id = 2,
 },
 },
 npc_list = {{
@@ -159,6 +165,19 @@ monster_list = {{
 		monster_type_id = 2003,
 		monster_num = 3,
 		radius = 800,
+},
+},
+collectable_list = {{
+		pos_x = 85764,
+		pos_y = 16385,
+		pos_z = 129069,
+		collectable_type_id = 4000,
+},
+{
+		pos_x = 80685,
+		pos_y = 16470,
+		pos_z = 108673,
+		collectable_type_id = 4001,
 },
 },
 }
