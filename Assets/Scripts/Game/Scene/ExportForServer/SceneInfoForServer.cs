@@ -32,7 +32,7 @@ public class SceneInfoForServer : MonoBehaviour
     [HideInInspector]
     [DataMember]
     public List<CollectableInfo> collectable_list;
-
+    
     // [DataMember]
     // public Dictionary<int, string> test_dic;
 }
