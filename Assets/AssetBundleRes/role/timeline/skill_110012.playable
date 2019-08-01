@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974e475371163f64791e7c4b80e23a74, type: 3}
   m_Name: CastSkillClip(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
-  skillID: 110010
+  skillID: 110012
 --- !u!114 &114066225021115122
 MonoBehaviour:
   m_ObjectHideFlags: 1

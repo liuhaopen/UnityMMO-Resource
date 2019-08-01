@@ -11,7 +11,7 @@ public class SceneStaticObject : ISceneObject
     private Bounds m_Bounds;
     [SerializeField]
     [DataMember]
-    private string m_ResPath;
+    private int m_ResID;
     [SerializeField]
     [DataMember]
     private Vector3 m_Position;
@@ -35,12 +35,10 @@ public class SceneStaticObject : ISceneObject
 
     public void OnHide()
     {
-        Debug.Log("m_LoadStaticObj : "+(m_LoadStaticObj!=null).ToString());
         if (m_LoadStaticObj)
         {
-            Object.Destroy(m_LoadStaticObj);
+            // Object.Destroy(m_LoadStaticObj);
             m_LoadStaticObj = null;
-            // ResourceManager.UnLoad(m_ResPath);
         }
     }
 
@@ -48,26 +46,19 @@ public class SceneStaticObject : ISceneObject
     {
         if (m_LoadStaticObj == null)
         {
-            // XLuaFramework.ResourceManager.GetInstance().LoadPrefabGameObjectWithAction(m_ResPath, delegate(UnityEngine.Object obj) {
-            //     m_LoadStaticObj = obj as GameObject;
-            //     Debug.Log("LoadScene obj "+(obj!=null).ToString() +" m_LoadStaticObj : "+(m_LoadStaticObj!=null).ToString());
-            //     m_LoadStaticObj.transform.SetParent(parent);
-            //     m_LoadStaticObj.transform.position = m_Position;
-            //     m_LoadStaticObj.transform.eulerAngles = m_Rotation;
-            //     m_LoadStaticObj.transform.localScale = m_Size;
-            // });
+
             return true;
         }
         return false;
     }
 
-    public SceneStaticObject(Bounds bounds, Vector3 position, Vector3 rotation, Vector3 size, string resPath, int lightmapIndex, Vector4 lightmapScaleOffset)
+    public SceneStaticObject(Bounds bounds, Vector3 position, Vector3 rotation, Vector3 size, int resID, int lightmapIndex, Vector4 lightmapScaleOffset)
     {
         m_Bounds = bounds;
         m_Position = position;
         m_Rotation = rotation;
         m_Size = size;
-        m_ResPath = resPath;
+        m_ResID = resID;
         m_LightmapIndex = lightmapIndex;
         m_LightmapScaleOffset = lightmapScaleOffset;
     }
