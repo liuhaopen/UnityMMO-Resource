@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: d59cb7c571398c04689cdfd178b0ebfe,
+    type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
@@ -25504,6 +25505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126825001}
   - component: {fileID: 1126825002}
+  - component: {fileID: 1126825003}
   m_Layer: 0
   m_Name: scene_2001
   m_TagString: Untagged
@@ -25552,6 +25554,22 @@ MonoBehaviour:
   born_list: []
   npc_list: []
   monster_list: []
+  collectable_list: []
+--- !u!114 &1126825003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126825000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51abc8b036dea24aac9ad53d3bca97e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug_DrawMinDepth: 0
+  debug_DrawMaxDepth: 5
+  debug_DrawObj: 1
 --- !u!1001 &1129928449
 PrefabInstance:
   m_ObjectHideFlags: 0

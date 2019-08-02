@@ -1,7 +1,30 @@
 {
+    "ResPathList": [
+        "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad.prefab",
+        "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (1).prefab",
+        "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (2).prefab"
+    ],
     "LightmapMode": 1,
-    "LightColorResPath": [],
-    "LightDirResPath": [],
+    "LightColorResPath": [
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-0_comp_light.exr",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-1_comp_light.exr",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-2_comp_light.exr",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-3_comp_light.exr",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-4_comp_light.exr",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-5_comp_light.exr",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-6_comp_light.exr",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-7_comp_light.exr"
+    ],
+    "LightDirResPath": [
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-0_comp_dir.png",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-1_comp_dir.png",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-2_comp_dir.png",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-3_comp_dir.png",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-4_comp_dir.png",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-5_comp_dir.png",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-6_comp_dir.png",
+        "Assets/AssetBundleRes/scene/base_world/base_world_2001/Lightmap-7_comp_dir.png"
+    ],
     "Bounds": {
         "m_Center": {
             "x": 17.400009155273439,
@@ -28,7 +51,7 @@
                     "z": 0.10000000149011612
                 }
             },
-            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad.prefab",
+            "m_ResID": 0,
             "m_Position": {
                 "x": -17.0,
                 "y": 13.699999809265137,
@@ -65,7 +88,7 @@
                     "z": 0.10000000149011612
                 }
             },
-            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (1).prefab",
+            "m_ResID": 1,
             "m_Position": {
                 "x": -17.0,
                 "y": 13.699999809265137,
@@ -102,7 +125,7 @@
                     "z": 50.00000762939453
                 }
             },
-            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (2).prefab",
+            "m_ResID": 2,
             "m_Position": {
                 "x": 109.80000305175781,
                 "y": 13.699999809265137,
@@ -139,7 +162,7 @@
                     "z": 35.0
                 }
             },
-            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (2).prefab",
+            "m_ResID": 2,
             "m_Position": {
                 "x": -25.0,
                 "y": -24.0,
@@ -176,7 +199,7 @@
                     "z": 35.0
                 }
             },
-            "m_ResPath": "Assets/AssetBundleRes/scene/scene_2001/Prefabs/Quad (2).prefab",
+            "m_ResID": 2,
             "m_Position": {
                 "x": -25.0,
                 "y": 50.099998474121097,

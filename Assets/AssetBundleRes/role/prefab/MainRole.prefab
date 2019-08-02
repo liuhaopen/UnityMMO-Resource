@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8149045ebb3b68d42a0ea5f2b00bd91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectorSize: {x: 150, y: 100, z: 250}
+  detectorSize: {x: 100, y: 50, z: 100}
 --- !u!114 &1269004611595199333
 MonoBehaviour:
   m_ObjectHideFlags: 0
