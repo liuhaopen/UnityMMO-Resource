@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Name: ControlPlayableAsset
   m_EditorClassIdentifier: 
   sourceGameObject:
-    exposedName: fe27f3b863c4d714b85f53ed42723e97
+    exposedName: 
     defaultValue: {fileID: 0}
   prefabGameObject: {fileID: 1355509699263860, guid: 5943eab7890420b44b7aadd58e219b83,
     type: 3}
@@ -63,8 +63,8 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: 114066225021115122}
   - {fileID: 114353782618730906}
-  - {fileID: 114316793692091900}
   - {fileID: 8560884256062313796}
+  - {fileID: 114316793692091900}
   - {fileID: 114851617581063650}
   - {fileID: 114163035446555118}
   - {fileID: 114695956803519962}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15e0374501f39d54eb30235764636e0e, type: 3}
-  m_Name: ParticleTrack
+  m_Name: ParticleTrack_wing
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -378,7 +378,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: particle
+    m_DisplayName: wing_effect
   m_Markers:
     m_Objects: []
 --- !u!114 &114353782618730906
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_Name: ControlPlayableAsset
   m_EditorClassIdentifier: 
   sourceGameObject:
-    exposedName: fe27f3b863c4d714b85f53ed42723e97
+    exposedName: 915b26602646b644da09a8601f0430d5
     defaultValue: {fileID: 0}
   prefabGameObject: {fileID: 1154247255635522, guid: 7a69959aae03aff409a97297131a489d,
     type: 3}
@@ -997,7 +997,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15e0374501f39d54eb30235764636e0e, type: 3}
-  m_Name: ParticleTrack (1)
+  m_Name: ParticleTrack
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
