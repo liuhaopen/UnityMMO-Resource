@@ -1,0 +1,13 @@
+{
+    "name": "AutoLOD-Editor",
+    "references": [
+        "AutoLOD",
+        "UnityMeshSimplifier"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

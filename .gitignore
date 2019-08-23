@@ -45,3 +45,5 @@ Assets/Temp
 Assets/Temp.meta
 Assets/Scenes/navmesh_1001/*
 Assets/Scenes/scene_1001/*
+#Assets/AutoLOD/*
+#Assets/AutoLOD.meta
