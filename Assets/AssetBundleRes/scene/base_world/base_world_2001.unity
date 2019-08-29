@@ -257,9 +257,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 1x4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012789541266, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23
+      value: -22.91
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31020,6 +31024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Stones Tiles 4x4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010281818108, guid: 3fb9127ccfa0cbd49a6aa84d55480500, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013853282168, guid: 3fb9127ccfa0cbd49a6aa84d55480500, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.918085
@@ -32107,40 +32115,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1577771802}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1577771804 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013542726736, guid: 11569b238abeff84ea57b88ce242218a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1577771802}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1577771805
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577771804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 337f2e2530e670b46ba04aa43d4c172f, type: 3}
---- !u!64 &1577771806
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577771804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 337f2e2530e670b46ba04aa43d4c172f, type: 3}
 --- !u!1001 &1582185038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35217,7 +35191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23
+      value: -22.88
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40353,7 +40327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23
+      value: -22.88
       objectReference: {fileID: 0}
     - target: {fileID: 4000012802910864, guid: 8bfb28b749877c747a4d1109dfb3a7f1, type: 3}
       propertyPath: m_LocalPosition.y

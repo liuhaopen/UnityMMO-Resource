@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2044421762328870414}
   - component: {fileID: 8104556787059475389}
   - component: {fileID: 8410831872584674353}
+  - component: {fileID: 4351480207883728648}
+  - component: {fileID: -2685468394232098834}
   m_Layer: 10
   m_Name: Monster
   m_TagString: Untagged
@@ -98,6 +100,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b826d36e7d45894588f5009caff1123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4351480207883728648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526579848346314908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7a2a181df889e42838c6c50572dc89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIResState: 0
+  LooksNode: {fileID: 0}
+  Name: 
+--- !u!114 &-2685468394232098834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526579848346314908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 1000
 --- !u!1001 &2205294315170428148
 PrefabInstance:
   m_ObjectHideFlags: 0

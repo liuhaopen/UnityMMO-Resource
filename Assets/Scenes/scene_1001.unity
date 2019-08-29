@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster_type_id: 2000
-  monster_num: 10
+  monster_num: 7
   radius: 1000
 --- !u!1001 &32050855
 PrefabInstance:
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster_type_id: 2002
-  monster_num: 10
+  monster_num: 8
   radius: 1600
 --- !u!1001 &121996698
 PrefabInstance:
@@ -14908,7 +14908,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.75508e-40, z: -1.14e-43, w: -1.49e-43}
+  m_BoundingSphereOverride: {x: 0, y: 8.612597e-34, z: 0, w: 8.612597e-34}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -16620,7 +16620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster_type_id: 2002
-  monster_num: 10
+  monster_num: 6
   radius: 1200
 --- !u!1 &1593503404
 GameObject:
@@ -16841,7 +16841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster_type_id: 2000
-  monster_num: 10
+  monster_num: 7
   radius: 1300
 --- !u!1001 &1624583069
 PrefabInstance:
@@ -20638,7 +20638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster_type_id: 2000
-  monster_num: 10
+  monster_num: 6
   radius: 1000
 --- !u!1 &1961458592
 GameObject:
