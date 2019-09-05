@@ -315,7 +315,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle 0 0
+  m_Name: idle3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -396,7 +396,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle 0 0 0
+  m_Name: idle5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -423,7 +423,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle 0 0 0 0
+  m_Name: idle4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -528,7 +528,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle 0
+  m_Name: idle2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -555,7 +555,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: casual 0
+  m_Name: casual2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -636,7 +636,7 @@ AnimatorStateMachine:
     m_Position: {x: 132, y: 276, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102588329894070760}
-    m_Position: {x: 180, y: 180, z: 0}
+    m_Position: {x: 230, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102700441787121398}
     m_Position: {x: 480, y: 132, z: 0}
